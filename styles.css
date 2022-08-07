@@ -1,9 +1,9 @@
 body{
-    background-color: greenyellow;
+    background-color: #8EE4AF;
     margin:0;
     padding:0;
 }
-
+*{font-family:'Courier New', Courier, monospace;}
 .background-image
 {
     background-image: url(./img/sidepic.jpg);
@@ -20,20 +20,32 @@ body{
 
 .right
 {
-    margin-left: 220px;
+    margin-left: 100px;
+    
 }
 
 form{
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 707px;
     margin:0 auto;
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
     margin-top: 100px;
+    height:350px;
+    
 }
 
+.scam
+{
+    margin-top: 50px;
+    margin-left: 57px;
+}
+.tandc
+{
+    margin-left: 57px;
+}
 ul
 {
     list-style: none;
@@ -46,11 +58,77 @@ form li+li{
 }
 label{
     display: inline-block;
-    width: 130px;
+    width: 150px;
     text-align: right;
+
 }
 
 .mid-msg
 {
     margin-top: 90px;
 }
+
+input:invalid:not(:placeholder-shown) {
+    background: pink;
+}
+
+input:valid
+{
+    background-image: linear-gradient(to right,lightgreen,#4dc079);
+}
+
+.heading
+{
+    margin-top:15px;
+    font-size: 40px;
+}
+.mini-heading
+{
+    margin-top:25px;
+    font-size: 18px;
+}
+
+.submit
+{
+    margin-top: 50px;
+    margin-right: 50px;  
+}
+
+ 
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  button {
+      width: 75px;
+      height: 20px;
+      cursor: pointer;
+      border: none;
+      font-family: 'Comfortaa', cursive;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 20px;
+      border-radius: 4px;
+      box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+      background: whitesmoke;
+
+      background-size: 150%;
+      background-position: right;
+      transition: 1s;
+  }
+  
+  button:hover {
+      background-position: left;
+      color: rgb(85, 0, 165);
+      box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+  }
+  
+  button:focus {
+      outline: none;
+  }
