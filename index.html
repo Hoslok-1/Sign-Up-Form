@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel = "stylesheet" href="./styles.css">
+    <script src = "scripts.js" defer></script>
+</head>
+<body>
+    <div class = "main">
+        <div class = "background-image"></div>
+        <div class = "right">
+            <h2>Sign up to get the best offers right in your <br> mail, you know you want to!</h2>
+            <div class = "form">
+                    <form>
+                        <ul>
+                            <li>
+                                <label for = "first-name">First-name:</label>
+                                <input type = "text" id = "first-name" placeholder="John">
+                                <label for = "last-name">Last-name:</label>
+                                <input type= "text" id = "last-name" placeholder="Doe">
+                            </li>
+                            <li>
+                                <label for = "pass">Password:</label>
+                                <input type = "password" id ="pass" placeholder="">
+                                <label for = "pass1">Confirm Password:</label>
+                                <input type = "password" id = "pass1" placeholder="">
+                            </li>
+
+                            <div class = "mid-msg">We dont want to clutter your inbox either, let us know how many mails we can send in a week!</div>
+
+                            <li>
+                                <label for ="howmany">Mails</label>
+                                <input type = "range" min="0" max = "5" step = "1" value = "0" id = "howmany">
+                                <output name = "result" for = "howmany" id = "result"></output>
+                            </li>
+                            <li>
+                                <label for = "submit"></label>
+                                <button type="submit">Submit!</button>
+                            </li>
+                        </ul>
+                    </form>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
